@@ -1,5 +1,5 @@
 variable "AWS_REGION" {    
-    default = "eu-west-2"
+    default = "ap-south-1"
 }
 provider "aws" {
     region = "${var.AWS_REGION}"
@@ -10,7 +10,6 @@ resource "aws_vpc" "prodvpc" {
     enable_dns_support = "false" #gives you an internal domain name
     enable_dns_hostnames = "false" #gives you an internal host name
     
-  
   
 }
    
