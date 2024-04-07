@@ -1,5 +1,5 @@
 variable "AWS_REGION" {    
-    default = "eu-west-2"
+    default = "eu-west-1"
 }
 provider "aws" {
     region = "${var.AWS_REGION}"
