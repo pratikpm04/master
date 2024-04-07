@@ -1,5 +1,5 @@
 variable "AWS_REGION" {    
-    default = "eu-west-1"
+    default = "eu-west-2"
 }
 provider "aws" {
     region = "${var.AWS_REGION}"
@@ -17,7 +17,7 @@ resource "aws_subnet" "prodsubnetpublic1" {
     vpc_id = "${aws_vpc.prodvpc.id}"
     cidr_block = "10.0.1.0/24"
     map_public_ip_on_launch = "true" //it makes this a public subnet
-    availability_zone = "eu-west-1a"
+    availability_zone = "eu-west-2a"
   
 } 
 
